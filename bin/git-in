@@ -1,0 +1,4 @@
+#!/bin/bash
+git fetch origin > /dev/null
+BRANCH=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+git log $BRANCH..origin/$BRANCH
