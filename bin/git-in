@@ -2,6 +2,8 @@
 
 set -e -o pipefail
 
+# Fetch latest changes from the remote repository. Nothing is merged into local branches
 git fetch origin > /dev/null
+
 BRANCH=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 git log $BRANCH..origin/$BRANCH
