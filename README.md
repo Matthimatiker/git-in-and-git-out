@@ -10,9 +10,10 @@ Clone this repository:
 
 Add the ``bin`` directory to your ``PATH``:
 
+    cd git-in-and-git-out
     export PATH="`pwd`/bin:$PATH"
 
-You can use these commands to add the path configuration to your ``.bashrc`` file:
+You can use these commands to add the path configuration directly to your ``.bashrc`` file:
 
     cd git-in-and-git-out
     echo "export PATH=\"`pwd`/bin:\$PATH\"" >> ~/.bashrc
