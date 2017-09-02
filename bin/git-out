@@ -6,4 +6,4 @@ set -e -o pipefail
 git fetch origin > /dev/null
 
 BRANCH=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
-git log origin/$BRANCH..$BRANCH
+git log origin/$BRANCH..$BRANCH --
